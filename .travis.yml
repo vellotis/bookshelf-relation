@@ -1,0 +1,20 @@
+# .travis.yml
+language: node_js
+
+sudo: false
+
+node_js:
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+
+before_script:
+  - psql -c 'create database bookshelf_test;' -U postgres
+  - mysql -e 'create database bookshelf_test;'
+
+notifications:
+  email: false
+
+matrix:
+  fast_finish: true

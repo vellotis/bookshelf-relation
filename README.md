@@ -1,2 +1,2 @@
 # bookshelf-relation
-Better relations implementation for Bookshelf.js
+Better relations declaring implementation for Bookshelf.js
